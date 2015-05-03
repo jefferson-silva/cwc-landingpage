@@ -9,6 +9,7 @@
 
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,37 +19,127 @@
 	<![endif]-->
 </head>
 <body>
-	<header>
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="container-fluit">
-                    <div class="navbar-header">
-                        <a href="#" class="navbar-brand">MyApp</a>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#" class="navbar-brand">MyApp</a>
+            </div> <!-- end .navbar-header -->
+            
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Download The App</a></li>
+                </ul>
+
+
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email">
                     </div>
 
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Download The App</a></li>
-                    </ul>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
 
-                    <form class="navbar-form navbar-right">
-                        <div class="form-inline form-group">
-                            <input class="form-control" type="email" placeholder="Email">
-                            <input class="form-control" type="password" placeholder="Password">
-                            <input class="form-control btn btn-success" type="submit" value="Log In">
-                        </div>
-                    </form>
-                </div>
+                    <div class="form-group">
+                        <input type="submit" class="form-control btn btn-success" value="Log In">
+                    </div>
+                </form>
+
+            </div> <!-- end .collapse -->
+
+        </div> <!-- end .container-fluid -->
+    </nav>
+
+
+    <section class="row hero text-center">
+        <div class="container-fluid">
+
+            <div class="col-sm-6 col-sm-offset-3">
+                <h1>My Awesome App</h1>
+
+                <p class="lead">This is why should download this fantastic app.</p>
+
+                <p>Some more information about the app. You can into a little more detail here if you want to.</p>
+
+                <p><b>Interested? Join our mailing list!</b></p>
+
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-addon">@</span>
+                        <input type="email" class="form-control" placeholder="Your email">
+                    </div>
+
+                        <input class="btn btn-success btn-lg" type="submit" value="Submit">
+                </form>
             </div>
-        </nav>
-    </header>
+
+        </div>
+    </section>
+
+    <section class="container-fluid features">
+        <div class="row text-center">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="h1">Why This App Is Awesome</h2>
+                <p class="lead">Summary of the app's awesomeness</p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <h3><span class="glyphicon glyphicon-music"></span> Header</h3>
+
+                <p>A brief description of one of the best features of your app. Maybe a little more text. A brief description of one of the best features of your app. Maybe a little more text.</p>
+
+                <a href="#" class="btn btn-success">Sign Up!</a>
+            </div>
+
+            <div class="col-sm-4">
+                
+                <h3><span class="glyphicon glyphicon-off"></span> Header</h3>
+
+                <p>A brief description of one of the best features of your app. Maybe a little more text. A brief description of one of the best features of your app. Maybe a little more text.</p>
+
+                <a href="#" class="btn btn-success">Sign Up!</a>
+            </div>
+
+            <div class="col-sm-4">
+                <h3><span class="glyphicon glyphicon-pencil"></span> Header</h3>
+
+                <p>A brief description of one of the best features of your app. Maybe a little more text. A brief description of one of the best features of your app. Maybe a little more text.</p>
+
+                <a href="#" class="btn btn-success">Sign Up!</a>
+            </div>
+
+        </div> <!-- end .features -->
+    </section>
 
 
+    <section class="download">
+        <div class="text-center">
+            <h2 class="h1">Download The App!</h2>
+            <p class="lead">Really, why should I download this app?</p>
+            <a href="#"><img src="img/appstore.png" alt=""></a>
+        </div>
+    </section>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(".hero").css("min-height", $(window).height());
+    </script>
 </body>
 </html>

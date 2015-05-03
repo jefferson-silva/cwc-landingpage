@@ -1,0 +1,26 @@
+.hero {
+	background: url(../img/hero-bg.jpg) no-repeat;
+	background-size: cover;
+	margin-top: -20px;
+	padding-top: 50px;
+}
+
+	.hero h1,
+	.hero p,
+	.hero form {
+		margin-top: 30px;
+	}
+
+	.hero input[type=submit] {
+		margin-top: 50px;
+	}
+
+.features,
+.download {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.download {
+	background: #80d1f8;
+}
